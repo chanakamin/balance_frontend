@@ -1,20 +1,20 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { store } from '@/store'
-import { useInitializeApp, useAppSelector } from '@/hooks/useRedux'
-import { LoadingSpinner } from '@/components/LoadingSpinner'
-import { ProtectedRoute } from '@/components/ProtectedRoute'
-import { Navigation } from '@/components/Navigation'
-import { Sidebar } from '@/components/Sidebar'
+import { store } from './store'
+import { useInitializeApp, useAppSelector } from './hooks/useRedux'
+import { LoadingSpinner } from './components/LoadingSpinner'
+import { ProtectedRoute } from './components/ProtectedRoute'
+import { Navigation } from './components/Navigation'
+import { Sidebar } from './components/Sidebar'
 
 // Pages
-import { LoginPage } from '@/pages/LoginPage'
-import { RegisterPage } from '@/pages/RegisterPage'
-import { DashboardPage } from '@/pages/DashboardPage'
-import { IncomeListPage } from '@/pages/IncomeListPage'
-import { ExpenseListPage } from '@/pages/ExpenseListPage'
-import { ReportsPage } from '@/pages/ReportsPage'
+import { LoginPage } from './pages/LoginPage'
+import { RegisterPage } from './pages/RegisterPage'
+import { DashboardPage } from './pages/DashboardPage'
+import { IncomeListPage } from './pages/IncomeListPage'
+import { ExpenseListPage } from './pages/ExpenseListPage'
+import { ReportsPage } from './pages/ReportsPage'
 
 // Layout wrapper for protected pages
 const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

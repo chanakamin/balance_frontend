@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-import { useAppDispatch, useAppSelector } from '@/hooks/useRedux'
-import { login } from '@/store/slices/authSlice'
-import { Button } from '@/components/Button'
-import { Alert } from '@/components/Alert'
+import { useAppDispatch, useAppSelector } from '../hooks/useRedux'
+import { login } from '../store/slices/authSlice'
+import { Button } from '../components/Button'
+import { Alert } from '../components/Alert'
 
 export const LoginPage: React.FC = () => {
   const dispatch = useAppDispatch()

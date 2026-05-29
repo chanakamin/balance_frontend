@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { Transaction, CreateTransactionPayload } from '@/types'
-import { transactionAPI } from '@/services/transactionAPI'
+import { Transaction, CreateTransactionPayload } from '../../types'
+import { transactionAPI } from '../../services/transactionAPI'
 
 interface TransactionState {
   incomeList: Transaction[]

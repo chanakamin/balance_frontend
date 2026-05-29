@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { useAppDispatch, useAppSelector } from '@/hooks/useRedux'
-import { fetchMonthlyReport, fetchBalanceRange, fetchByCategory } from '@/store/slices/balanceSlice'
+import { useAppDispatch, useAppSelector } from '../hooks/useRedux'
+import { fetchMonthlyReport, fetchBalanceRange, fetchByCategory } from '../store/slices/balanceSlice'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
-import { Button } from '@/components/Button'
-import { LoadingSpinner } from '@/components/LoadingSpinner'
+import { Button } from '../components/Button'
+import { LoadingSpinner } from '../components/LoadingSpinner'
 import { format, startOfYear, endOfYear } from 'date-fns'
 
 export const ReportsPage: React.FC = () => {

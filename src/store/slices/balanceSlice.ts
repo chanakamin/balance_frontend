@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { BalanceSummary, MonthlyReport, DateRangeReport } from '@/types'
-import { balanceAPI } from '@/services/balanceAPI'
+import { BalanceSummary, MonthlyReport, DateRangeReport } from '../../types'
+import { balanceAPI } from '../../services/balanceAPI'
 
 interface BalanceState {
   summary: BalanceSummary | null

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux'
-import type { RootState, AppDispatch } from '@/store'
-import { checkAuthStatus } from '@/store/slices/authSlice'
+import type { RootState, AppDispatch } from '../store'
+import { checkAuthStatus } from '../store/slices/authSlice'
 
 // Export pre-typed versions of useDispatch and useSelector
 export const useAppDispatch = () => useDispatch<AppDispatch>()

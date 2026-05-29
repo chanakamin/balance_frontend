@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from '@/hooks/useRedux'
-import { fetchBalance, fetchMonthlyReport } from '@/store/slices/balanceSlice'
-import { fetchIncomeList, fetchExpenseList } from '@/store/slices/transactionSlice'
-import { BalanceSummary } from '@/components/BalanceSummary'
-import { TransactionTable } from '@/components/TransactionTable'
-import { LoadingSpinner } from '@/components/LoadingSpinner'
+import { useAppDispatch, useAppSelector } from '../hooks/useRedux'
+import { fetchBalance, fetchMonthlyReport } from '../store/slices/balanceSlice'
+import { fetchIncomeList, fetchExpenseList } from '../store/slices/transactionSlice'
+import { BalanceSummary } from '../components/BalanceSummary'
+import { TransactionTable } from '../components/TransactionTable'
+import { LoadingSpinner } from '../components/LoadingSpinner'
 
 export const DashboardPage: React.FC = () => {
   const dispatch = useAppDispatch()
